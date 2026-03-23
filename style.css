@@ -1,0 +1,177 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+/* LOGO ORANGE (emoji) */
+#logo {
+  font-size: 60px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tabs {
+  display: flex;
+  background: white;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  color: gray;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: orange;
+  border-bottom: 3px solid orange;
+}
+
+.search {
+  margin: 20px;
+}
+
+.search input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#searchInterventionBtn {
+  display: none;
+  margin: 0 20px;
+  padding: 12px;
+  background: orange;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.picker {
+  margin: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+.big-button {
+  margin: 20px;
+  padding: 15px;
+  background: orange;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-button {
+  width: 100%;
+  padding: 15px;
+  background: orange;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.floating {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: orange;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#interventionPage {
+  display: none;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#historyPage {
+  display: none;
+  padding: 20px;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.field textarea {
+  min-height: 80px;
+  resize: vertical;
+}
